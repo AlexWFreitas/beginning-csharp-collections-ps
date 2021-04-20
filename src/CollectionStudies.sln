@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ReadAllCountries", "Collect
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CollectionStudies", "CollectionStudies\c2-arrays\CollectionStudies.csproj", "{224C3296-A978-4C36-8A4D-BFA5BF1B5F94}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DictSnippets", "CollectionStudies\c5-dict\DictSnippets\DictSnippets.csproj", "{DCC11DDE-941E-4565-A534-ACD9FB3A6059}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{224C3296-A978-4C36-8A4D-BFA5BF1B5F94}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{224C3296-A978-4C36-8A4D-BFA5BF1B5F94}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{224C3296-A978-4C36-8A4D-BFA5BF1B5F94}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DCC11DDE-941E-4565-A534-ACD9FB3A6059}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DCC11DDE-941E-4565-A534-ACD9FB3A6059}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DCC11DDE-941E-4565-A534-ACD9FB3A6059}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DCC11DDE-941E-4565-A534-ACD9FB3A6059}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
