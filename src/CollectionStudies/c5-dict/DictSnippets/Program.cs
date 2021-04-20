@@ -34,9 +34,6 @@ namespace DictSnippets
                 else
                     Console.WriteLine("\nThere is no country with the code MUS");
             }
-
-
-
         }
     }
 }
