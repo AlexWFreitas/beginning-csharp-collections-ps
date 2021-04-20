@@ -65,5 +65,10 @@ namespace ReadCountriesForLoop
 
             return new Country(name, code, region, population);
         }
+
+        public void RemoveCommaCountries(List<Country> countries)
+        {
+            countries.RemoveAll(country => country.Name.Contains(','));
+        }
     }
 }

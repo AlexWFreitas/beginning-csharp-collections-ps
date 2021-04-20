@@ -12,6 +12,10 @@ namespace ReadCountriesForLoop
             CsvReader reader = new CsvReader(filePath);
 
             List<Country> countries = reader.ReadAllCountries();
+            reader.RemoveCommaCountries(countries);
+
+
+
 
             Console.Write("Enter no. of countries to display per batch >");
             bool inputIsInt = int.TryParse(Console.ReadLine(), out int userInput);
@@ -21,18 +25,35 @@ namespace ReadCountriesForLoop
                 return;
             }
 
-            for (int i = 0; i < countries.Count; i++)
+            int maxToDisplay = userInput;
+
+            for (int i = (countries.Count - 1); i >= 0; i--)
             {
-                if (i > 0 && (i % userInput == 0))
+                int displayIndex = countries.Count - 1 - i;
+                if (displayIndex > 0 && (displayIndex % maxToDisplay == 0))
                 {
                     Console.Write("Hit return to continue, anything else to quit >");
                     if (Console.ReadLine() != "")
                         break;
                 }
                 Country country = countries[i];
-                Console.WriteLine($@"{(i + 1).ToString().PadRight(3)}{PopulationFormatter.FormatPopulation
+                Console.WriteLine($@"{(displayIndex + 1).ToString().PadRight(3)}{PopulationFormatter.FormatPopulation
                     (country.Population).PadLeft(15)} : {country.Name}");
             }
+
+            //for (int i = (countries.Count - 1); i >= 0; i--)
+            //{
+            //    int displayIndex = countries.Count - 1 - i;
+            //    if (displayIndex > 0 && (displayIndex % maxToDisplay == 0))
+            //    {
+            //        Console.Write("Hit return to continue, anything else to quit >");
+            //        if (Console.ReadLine() != "")
+            //            break;
+            //    }
+            //    Country country = countries[i];
+            //    Console.WriteLine($@"{(displayIndex + 1).ToString().PadRight(3)}{PopulationFormatter.FormatPopulation
+            //        (country.Population).PadLeft(15)} : {country.Name}");
+            //}
         }
     }
 }
