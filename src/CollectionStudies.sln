@@ -3,15 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31129.286
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ReadAllCountries", "CollectionStudies\c4-lists\ReadAllCountries\ReadAllCountries.csproj", "{96DCDBEB-7126-4D19-81D3-E848AC6491F8}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CollectionStudies", "CollectionStudies\c2-arrays\CollectionStudies.csproj", "{224C3296-A978-4C36-8A4D-BFA5BF1B5F94}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DictSnippets", "CollectionStudies\c5-dict\DictSnippets\DictSnippets.csproj", "{DCC11DDE-941E-4565-A534-ACD9FB3A6059}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DictSnippets", "CollectionStudies\c5-dict\DictSnippets\DictSnippets.csproj", "{DCC11DDE-941E-4565-A534-ACD9FB3A6059}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DisplaySingleCountry", "CollectionStudies\c5-dict\DisplaySingleCountry\DisplaySingleCountry.csproj", "{E66D2A92-D0BD-4042-9ABF-C1599370E5E5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DisplaySingleCountry", "CollectionStudies\c5-dict\DisplaySingleCountry\DisplaySingleCountry.csproj", "{E66D2A92-D0BD-4042-9ABF-C1599370E5E5}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ReadCountriesForLoop", "CollectionStudies\c6-manipulating-lists\ReadCountriesForLoop\ReadCountriesForLoop.csproj", "{90FBFF29-BF0D-4098-8CD4-62AF9BD935EE}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ReadAllCountries", "CollectionStudies\c7-linq\ReadAllCountries\ReadAllCountries.csproj", "{13C1E5FF-036F-451E-B960-31A37DE89310}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -19,10 +19,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{96DCDBEB-7126-4D19-81D3-E848AC6491F8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{96DCDBEB-7126-4D19-81D3-E848AC6491F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{96DCDBEB-7126-4D19-81D3-E848AC6491F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{96DCDBEB-7126-4D19-81D3-E848AC6491F8}.Release|Any CPU.Build.0 = Release|Any CPU
 		{224C3296-A978-4C36-8A4D-BFA5BF1B5F94}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{224C3296-A978-4C36-8A4D-BFA5BF1B5F94}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{224C3296-A978-4C36-8A4D-BFA5BF1B5F94}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -39,6 +35,10 @@ Global
 		{90FBFF29-BF0D-4098-8CD4-62AF9BD935EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{90FBFF29-BF0D-4098-8CD4-62AF9BD935EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{90FBFF29-BF0D-4098-8CD4-62AF9BD935EE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{13C1E5FF-036F-451E-B960-31A37DE89310}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{13C1E5FF-036F-451E-B960-31A37DE89310}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{13C1E5FF-036F-451E-B960-31A37DE89310}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{13C1E5FF-036F-451E-B960-31A37DE89310}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

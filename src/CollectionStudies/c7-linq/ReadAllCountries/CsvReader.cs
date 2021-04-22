@@ -1,7 +1,7 @@
 ﻿using System.IO;
 using System.Collections.Generic;
 
-namespace ReadCountriesForLoop
+namespace ReadAllCountries
 {
     class CsvReader
     {
@@ -52,7 +52,7 @@ namespace ReadCountriesForLoop
                 case 5:
                     name = parts[0];
                     name += ", " + parts[1];
-                    name.Replace("\"", null).Trim();
+                    name = name.Replace("\"", null).Trim();
                     code = parts[2];
                     region = parts[3];
                     popText = parts[4];
@@ -65,11 +65,6 @@ namespace ReadCountriesForLoop
             int.TryParse(popText, out int population);
 
             return new Country(name, code, region, population);
-        }
-
-        public void RemoveCommaCountries(List<Country> countries)
-        {
-            countries.RemoveAll(country => country.Name.Contains(','));
         }
     }
 }
