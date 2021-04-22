@@ -15,10 +15,15 @@ namespace ReadAllCountries
             List<Country> countries = reader.ReadAllCountries();
 
             //foreach (Country country in countries.OrderBy(country => country.Name).Take(10))
+
+            // Method Syntax
             IEnumerable<Country> filteredCountries = countries.Where(country => !country.Name.Contains(',')).Take(20);
+
+            // Query Syntax
             var filteredCountries2 = from country in countries
                                      where !country.Name.Contains(',')
                                      select country;
+
             foreach (Country country in filteredCountries2)
             {
                 Console.WriteLine($@"{PopulationFormatter.FormatPopulation
