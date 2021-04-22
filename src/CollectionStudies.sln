@@ -15,6 +15,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ReadAllCountries", "Collect
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CountriesByRegion", "CollectionStudies\c8-collections-of-collections\CountriesByRegion\CountriesByRegion.csproj", "{C91FC4DA-D5DF-4AFD-84E6-1E659D8207EB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NoughtsAndCrosses", "CollectionStudies\c8-collections-of-collections\NoughtsAndCrosses\NoughtsAndCrosses.csproj", "{C357E61D-B67C-41B2-B19D-A6FEF1072653}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +47,10 @@ Global
 		{C91FC4DA-D5DF-4AFD-84E6-1E659D8207EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C91FC4DA-D5DF-4AFD-84E6-1E659D8207EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C91FC4DA-D5DF-4AFD-84E6-1E659D8207EB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C357E61D-B67C-41B2-B19D-A6FEF1072653}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C357E61D-B67C-41B2-B19D-A6FEF1072653}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C357E61D-B67C-41B2-B19D-A6FEF1072653}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C357E61D-B67C-41B2-B19D-A6FEF1072653}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

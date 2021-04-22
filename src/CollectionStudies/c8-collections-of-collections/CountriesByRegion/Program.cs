@@ -12,22 +12,24 @@ namespace CountriesByRegion
 
             CsvReader reader = new CsvReader(filePath);
 
-            var countries = reader.ReadAllCountries();
+            Dictionary<string, List<Country>> countries = reader.ReadAllCountries();
 
-            //foreach (Country country in countries.OrderBy(country => country.Name).Take(10))
+            foreach (string region in countries.Keys)
+                Console.WriteLine(region);
 
-            // Method Syntax
-            IEnumerable<Country> filteredCountries = countries.Where(country => !country.Name.Contains(',')).Take(20);
+            Console.Write("Which of the above regions do you want? ");
+            string chosenRegion = Console.ReadLine();
 
-            // Query Syntax
-            var filteredCountries2 = from country in countries
-                                     where !country.Name.Contains(',')
-                                     select country;
-
-            foreach (Country country in filteredCountries2)
+            if (countries.ContainsKey(chosenRegion))
             {
-                Console.WriteLine($@"{PopulationFormatter.FormatPopulation
-                    (country.Population).PadLeft(15)} : {country.Name}");
+                foreach (Country country in countries[chosenRegion].Take(10))
+                {
+                    Console.WriteLine($"{PopulationFormatter.FormatPopulation(country.Population).PadLeft(15)} : {country.Name}");
+                }
+            }
+            else
+            {
+                Console.WriteLine("Region does not exist in our data.");
             }
         }
     }
